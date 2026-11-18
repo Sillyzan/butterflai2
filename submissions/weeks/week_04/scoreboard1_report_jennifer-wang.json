@@ -1,0 +1,129 @@
+{
+ "student": "Jennifer Wang",
+ "variant": "shape-two_sided__width-amplitude",
+ "kind": "candidate",
+ "question": "the same, with ties reverted to the baseline value",
+ "spec": {
+  "shape": "two_sided",
+  "pooling": "shared",
+  "drift": "exponential",
+  "profile": "gaussian",
+  "width": "amplitude",
+  "gate": "none",
+  "emission": "threshold"
+ },
+ "my_knob": {
+  "stage": "drift",
+  "values": [
+   "exponential_floor"
+  ],
+  "default": "exponential",
+  "question": "Does the belt's center head toward a latitude above the equator late in the cycle, rather than toward 0 degrees?",
+  "expected": "TODO: write your prediction here before running anything"
+ },
+ "fitted_parameters": 26,
+ "held_out_nll_per_hemicycle_year": -26.28990095920813,
+ "between_hemicycle_spread": 18.400053473230543,
+ "per_hemicycle": {
+  "12N": -3.9854368943650194,
+  "12S": -4.089604250083412,
+  "13N": -10.372565795490921,
+  "13S": -19.050468681799217,
+  "14N": -2.65028248370135,
+  "14S": -1.4642642743114374,
+  "15N": -14.95702404851426,
+  "15S": -16.751042857298984,
+  "17N": -34.30372380556895,
+  "17S": -36.6342249407032,
+  "18N": -53.09108675070348,
+  "18S": -46.088970747666814,
+  "19N": -62.958672037496186,
+  "19S": -43.890080434473305,
+  "21N": -34.22477007196995,
+  "21S": -34.06067475025408,
+  "23N": -26.000913844012242,
+  "23S": -28.644410597333504
+ },
+ "paired_vs_baseline": {
+  "mean": -0.8705725953504966,
+  "se": 0.3939119102535363,
+  "median": -0.32137204101358385,
+  "better": 16,
+  "of": 18
+ },
+ "ks_median": 0.0417337794310664,
+ "ks_not_rejected": 8,
+ "in_sample_nll": -27.332899123411956,
+ "plausibility": [
+  {
+   "hemicycle": "19N",
+   "predicted": 1443.015114074928,
+   "observed": 1590,
+   "centroid_model": 15.218713862170514,
+   "centroid_obs": 17.16069182389937,
+   "spread_model": 7.713826879321062,
+   "spread_obs": 8.507418494423913
+  },
+  {
+   "hemicycle": "19S",
+   "predicted": 1254.3444487503352,
+   "observed": 1121,
+   "centroid_model": 15.086066699601977,
+   "centroid_obs": 16.36842105263158,
+   "spread_model": 7.4805729572104305,
+   "spread_obs": 7.604571117406902
+  }
+ ],
+ "count_error_percent": 10.569733072869536,
+ "protocol": {
+  "held_out_unit_contributed": [
+   "its clock (time shift) from its own events, with the drift timescale from the training fold",
+   "its amplitude predicted from the sunspot-area record through a map fitted on training wings",
+   "no shape parameters"
+  ]
+ },
+ "fingerprint": {
+  "recipe": {
+   "mesh": [
+    201,
+    241
+   ],
+   "domain": [
+    0.0,
+    60.0
+   ],
+   "window": [
+    -6.0,
+    11.0
+   ],
+   "folds": [
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23
+   ],
+   "withheld": [
+    16,
+    20,
+    22
+   ],
+   "analysis_set": [
+    12,
+    23,
+    30.0
+   ],
+   "gauge": [
+    1.0,
+    1.0,
+    15.0
+   ],
+   "headline_amplitude": "area record"
+  },
+  "digest": "5e55384fbc54"
+ }
+}
